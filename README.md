@@ -25,7 +25,7 @@ This project is a Music Recommendation System that classifies songs into differe
 🧪 How It Works
 
 1. Preprocessing:
-   - Read `SpotifySongs.csv` dataset.
+   - Read `Songs with Moods.csv` dataset.
    - Clean and select relevant audio features.
    - Encode mood labels.
 

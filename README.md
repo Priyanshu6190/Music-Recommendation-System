@@ -42,6 +42,7 @@ Uses SpotifySongs.csv which contains audio features like Energy, Valence, Dancea
 Each song is labeled with a mood either via rules or ML prediction.
 
 📌 TODOs / Future Improvements
+
  Add genre-based filtering
 
  Improve accuracy using deep learning models

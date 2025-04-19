@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-image: url('background.jpg');  /* or 'static/background.jpg' depending on structure */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0c0c0c;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    width: 100%;
+    height: 100%;
+    min-height: 10vh;
+    backdrop-filter: blur(2px); /* optional blur for cool effect */
+    color: white;
+    text-align: center;
+}
+.container {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #05caf1;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #05caf1;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #05caf1;
+}
+
+.play-selected-btn {
+    padding: 10px 20px;
+    background-color: #05caf1;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.play-selected-btn:hover {
+    background-color: #05caf1;
+}
+
+.video-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#audioPlayer {
+    width: 100%;
+}
+
+.audio-player {
+    margin-top: 20px;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: #444;
+    border-radius: 4px;
+    margin: 15px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background-color: #05caf1;
+    border-radius: 4px;
+    transition: width 0.2s ease;
+}
+
+#currentSong {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+ul#recommendations {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul#recommendations li {
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin: 5px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    text-transform: capitalize; /* Capitalize each word */
+}
+
+#songIndex {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    width: 250px;
+}
